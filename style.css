@@ -1,0 +1,133 @@
+body {
+    width: 600px;
+    height: 700px;
+    font-family: 'Poppins', sans-serif;
+    background: url('icons/image.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgba(29, 29, 29, 0.9);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ff3366;
+    font-weight: 600;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 10px;
+}
+
+.tools {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(29, 29, 29, 0.9);
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tool {
+    background-color: rgba(42, 42, 42, 0.9);
+    width: 90%;
+    max-width: 160px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.tool img {
+    width: 50px;
+    height: 50px;
+}
+
+#chatgpt img {
+    background-color: #fff;
+    border-radius: 10px; 
+}
+
+#ronak {
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.tool h2 {
+    font-size: 1em;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.tool p {
+    font-size: 0.8em;
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+.tool:hover {
+    transform: scale(1.05);
+    border: 2px solid #fff;
+}
+
+.btn {
+    background-color: #ff3366;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #ff6699;
+}
+
+@media (min-width: 600px) {
+    body {
+        max-width: 600px;
+    }
+}
